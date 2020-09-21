@@ -1,0 +1,40 @@
+{
+  "name": "vue-mongo-demo-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.5",
+    "resolve-url-loader": "^3.1.1",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2"
+  },
+  "scripts": {
+		"dev": "npm run development",
+		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "npm run development -- --watch",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cds-mm/node-vue-mongo-demo-app.git"
+  },
+  "author": "Mykhaylo Markov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cds-mm/node-vue-mongo-demo-app/issues"
+  },
+  "homepage": "https://github.com/cds-mm/node-vue-mongo-demo-app#readme"
+}

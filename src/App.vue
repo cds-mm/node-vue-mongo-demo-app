@@ -9,6 +9,9 @@
 <script>
 export default {
     watch: {
+        /**
+         * Change page title based on meta.title tag from displayed route
+         */
         '$route': {
             handler: (to, from) => {
                 document.title = to.meta.title || 'Test App'

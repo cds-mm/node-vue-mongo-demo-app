@@ -1,5 +1,5 @@
 const express = require('express');
-const history = require('connect-history-api-fallback'); // https://github.com/bripkens/connect-history-api-fallback fixes issue for SPA using single index file.
+const history = require('connect-history-api-fallback'); // https://github.com/bripkens/connect-history-api-fallback fixes issue with # for SPA using single index file.
 const app = express();
 
 app.use(history());

@@ -1,0 +1,4 @@
+student_num;firstnm;lastnm;address;course;course_start_dtm;course_end_dtm;created_at;updated_at;deleted_at;
+20200331;Alice;Wilkinson;86 Park Way, Sheffield;BSc Computer Science;2020-09-12 00:00:00;2023-06-12 00:00:00;;;
+20200422;Tom;Stones;14 Manor Road, Sheffield;BA War Studies;2020-09-12 00:00:00;2023-06-12 00:00:00;;;
+20208633;Peter;;32 St Nicolas Road, Sheffield;BA War Studies;2020-09-12 00:00:00;2023-06-12 00:00:00;;;

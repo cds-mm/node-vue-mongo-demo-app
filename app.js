@@ -5,12 +5,15 @@ const app = express();
 app.use(history());
 app.use(express.static('./public'));
 
-// Database
-// var MongoClient = require('mongodb').MongoClient
+const routes = require('./routes/routes');
+app.use('/', routes(app))
 
-// MongoClient.connect('mongodb://localhost:27017', {useNewUrlParser: true, useUnifiedTopology: true}, () => {
-//     app.set('myDb', client.db('studendsDb'));
-// })
+//Database
+var MongoClient = require('mongodb').MongoClient
+
+MongoClient.connect('mongodb://localhost:27017', {useNewUrlParser: true, useUnifiedTopology: true}, (err, client) => {
+    app.set('myDb', client.db('node-vue-mongo-demo-app'));
+})
 
 app.listen(3000, () => {
     console.log('Express on 3000')

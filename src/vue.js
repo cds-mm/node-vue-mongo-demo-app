@@ -15,9 +15,9 @@ const router = new VueRouter({
     mode: 'history',
 
     routes: [
-        {path: '/', Welcome},
-        {path: '/tasks', component: Tasks},
-        {path: '/students', component: Students}
+        {path: '/', component: Welcome, meta: {title: 'Dashboard'}},
+        {path: '/tasks', component: Tasks, meta: {title: 'Tasks'}},
+        {path: '/students', component: Students, meta: {title: 'Students'}}
         // {path: '/student/:id', component: () => import('./components/students/Show')},
         // {path: '*', component: () => import('./NotFound')} //If no other routes match, trigger the 404 page
     ]

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Welcome from './components/Welcome'
 import Tasks from './components/Tasks'
+import Students from './components/students/Index'
 
 import App from './App';
 
@@ -16,6 +17,9 @@ const router = new VueRouter({
     routes: [
         {path: '/', Welcome},
         {path: '/tasks', component: Tasks},
+        {path: '/students', component: Students}
+        // {path: '/student/:id', component: () => import('./components/students/Show')},
+        // {path: '*', component: () => import('./NotFound')} //If no other routes match, trigger the 404 page
     ]
 });
 

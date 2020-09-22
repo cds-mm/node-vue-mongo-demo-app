@@ -23,6 +23,13 @@ const router = new VueRouter({
     ]
 });
 
+// Change page title based on meta.title tag from displayed route
+router.beforeEach((to, from) => {
+    document.title = to.meta.title || 'Test App';
+    next();
+});
+
+// Render route
 new Vue({
     router,
     render: h => h(App),

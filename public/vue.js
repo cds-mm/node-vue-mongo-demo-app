@@ -2002,8 +2002,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 // const axios = require('axios');
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2596,31 +2594,29 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "table",
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._l(_vm.students, function(student) {
-          return _c("tr", [
-            _c("td", [_vm._v(_vm._s(student.student_num))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(student.firstnm))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(student.lastnm))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(student.course))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(student.course_start_dtm))]),
-            _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(student.course_end_dtm))])
-          ])
-        })
-      ],
-      2
-    )
-  ])
+  return _c(
+    "table",
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._l(_vm.students, function(student) {
+        return _c("tr", { key: student.student_num }, [
+          _c("td", [_vm._v(_vm._s(student.student_num))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(student.firstnm))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(student.lastnm))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(student.course))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(student.course_start_dtm))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(student.course_end_dtm))])
+        ])
+      })
+    ],
+    2
+  )
 }
 var staticRenderFns = [
   function() {

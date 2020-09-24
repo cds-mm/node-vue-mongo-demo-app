@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        This is a create vue
     </div>
 </template>
 

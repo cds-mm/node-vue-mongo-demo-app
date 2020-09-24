@@ -2,9 +2,9 @@ import Vue from 'vue';
 import axios from 'axios';
 import VueRouter from 'vue-router';
 
-import Welcome from './components/Welcome'
-import Tasks from './components/Tasks'
-import Students from './components/students/Index'
+import Welcome from './components/Welcome';
+import Students from './components/students/Index';
+import NotFound from './components/NotFound';
 
 import App from './App';
 
@@ -19,10 +19,9 @@ const router = new VueRouter({
 
     routes: [
         {path: '/', component: Welcome, meta: {title: 'Dashboard'}},
-        {path: '/tasks', component: Tasks, meta: {title: 'Tasks'}},
-        {path: '/students', component: Students, meta: {title: 'Students'}}
-        // {path: '/student/:id', component: () => import('./components/students/Show')},
-        // {path: '*', component: () => import('./NotFound')} //If no other routes match, trigger the 404 page
+        {path: '/students', component: Students, meta: {title: 'Students'}},
+        // {path: '/student/:id', component: StudentShow, meta: {title: 'Students'}},
+        {path: '*', component: NotFound, meta: {title: 'Not Found'}} //If no other routes match, trigger the 404 page
     ]
 });
 
@@ -36,4 +35,4 @@ router.beforeEach((to, from, next) => {
 new Vue({
     router,
     render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');

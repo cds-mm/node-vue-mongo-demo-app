@@ -1964,7 +1964,72 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      student: {
+        student_num: "",
+        firstnm: "",
+        lastnm: "",
+        address: "",
+        course: "",
+        course_start_dtm: "",
+        course_end_dtm: ""
+      }
+    };
+  },
+  methods: {
+    submit: function submit() {
+      console.log('This does nothing at the moment');
+    },
+    reset: function reset() {
+      var _this = this;
+
+      Object.keys(this.student).forEach(function (key) {
+        _this.student[key] = "";
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -2731,7 +2796,209 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    This is a create vue\n")])
+  return _c("div", [
+    _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Student Number")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.student.student_num,
+              expression: "student.student_num"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text", required: "" },
+          domProps: { value: _vm.student.student_num },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.student, "student_num", $event.target.value)
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("First Name")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.student.firstnm,
+              expression: "student.firstnm"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text", required: "" },
+          domProps: { value: _vm.student.firstnm },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.student, "firstnm", $event.target.value)
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Last Name")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.student.lastnm,
+              expression: "student.lastnm"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text", required: "" },
+          domProps: { value: _vm.student.lastnm },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.student, "lastnm", $event.target.value)
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Course")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.student.course,
+              expression: "student.course"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text" },
+          domProps: { value: _vm.student.course },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.student, "course", $event.target.value)
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Course Start")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.student.course_end_dtm,
+              expression: "student.course_end_dtm"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text" },
+          domProps: { value: _vm.student.course_end_dtm },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.student, "course_end_dtm", $event.target.value)
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Course End")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.student.course_start_dtm,
+              expression: "student.course_start_dtm"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text" },
+          domProps: { value: _vm.student.course_start_dtm },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.student, "course_start_dtm", $event.target.value)
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "field is-grouped is-grouped-centered" }, [
+      _c("p", { staticClass: "control" }, [
+        _c(
+          "button",
+          {
+            staticClass: "button",
+            attrs: { type: "button" },
+            on: {
+              click: function($event) {
+                return _vm.submit()
+              }
+            }
+          },
+          [_vm._v("Submit")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "control" }, [
+        _c(
+          "button",
+          {
+            staticClass: "button",
+            attrs: { type: "button" },
+            on: {
+              click: function($event) {
+                return _vm.reset()
+              }
+            }
+          },
+          [_vm._v("Reset")]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

@@ -27,15 +27,18 @@ module.exports = {
 // Create
     create: (app, req, res) => {
         var newStudent = req.body;
-        app.get('myDb').collection('students').insertOne(newStudent,
-            (err, dbRes) => {
-                if(err){console.error(err)}
-                if(dbRes.insertedCount === 1){
-                    res.json({msg: "Successfully Updated"})
-                } else {
-                    res.json({msg: "Not Found"})
-                }
-            })
+
+        res.json({msg: "Successfully Created"});
+
+        // app.get('myDb').collection('students').insertOne(newStudent,
+        //     (err, dbRes) => {
+        //         if(err){console.error(err)}
+        //         if(dbRes.insertedCount === 1){
+        //             res.json({msg: "Successfully Created"})
+        //         } else {
+        //             res.json({msg: "Not Found"})
+        //         }
+        //     })
     },
 
 // Update

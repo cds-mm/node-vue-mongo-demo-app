@@ -20,7 +20,6 @@ const router = new VueRouter({
     routes: [
         {path: '/', component: Welcome, meta: {title: 'Dashboard'}},
         {path: '/students', component: Students, meta: {title: 'Students'}},
-        // {path: '/student/:id', component: StudentShow, meta: {title: 'Students'}},
         {path: '*', component: NotFound, meta: {title: 'Not Found'}} //If no other routes match, trigger the 404 page
     ]
 });
